@@ -15,7 +15,7 @@ class ExplorerComponent extends React.Component {
     };
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     axios.get("https://chal-locdrmwqia.now.sh").then(response => {
       let rootData=response.data.data;
       let fileDetl = {
